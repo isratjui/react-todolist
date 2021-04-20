@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom'
 function App() {
   return (
     <Router>
-      <Route exact path="/home" component={Home} />
+      <Route exact path="/" component={Home} />
       </Router>
   );
 }

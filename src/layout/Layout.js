@@ -1,2 +1,11 @@
-import reactDom from "react-dom";
-import React from reactDom;
+import React from 'react';
+
+const Layout = () => {
+    return (
+        <div>
+            
+        </div>
+    );
+};
+
+export default Layout;
