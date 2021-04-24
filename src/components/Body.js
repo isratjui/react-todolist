@@ -14,14 +14,11 @@ const Body = () => {
 
     const handleChange = (e) => {
         setValue({
-            ...value, // age:"27",name:"JUI" next task to do list,
+            ...value, 
             [e.target.name]: e.target.value
 
         })
-        //setTodoList({
-        //  ...value, // age:"27",name:"JUI" next task to do list,
-        // [e.target.name]: e.target.value
-        //})
+       
 
         setFlag(false);
     }
