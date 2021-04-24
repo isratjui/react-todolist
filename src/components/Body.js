@@ -33,7 +33,7 @@ const Body = () => {
         setFlag(true);
        // setTask(value.name);
         setTodoList((todoList) => [
-            value.name,...todoList,
+            ...todoList,value.name,
             
           ]); 
           console.log(todoList);
@@ -61,7 +61,7 @@ const Body = () => {
                     todoList.map((item, i) => {
                        // if (i !== 0) {
                             return (
-                                <li key={i}>{item} {i}</li>
+                                <li key={i}>{item}</li>
                             )
                        // }
                     })
