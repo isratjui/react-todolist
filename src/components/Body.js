@@ -37,6 +37,15 @@ const Body = () => {
 
     }
    
+    const removeItem = (item) => {
+        //const arr = todoList.filter((item) => item.name !== i);
+       const arr1= todoList;
+      // console.log("i value"+i);
+       arr1.splice(item, 1);
+        
+        setTodoList([...arr1]);
+        console.log(arr1);
+    };
     
     //  setTodoList(value);
     return (
@@ -58,7 +67,7 @@ const Body = () => {
                     todoList.map((item, i) => {
                        // if (i !== 0) {
                             return (
-                                <li key={i}>{item}</li>
+                                <li key={i}>{item} <button onClick={() => removeItem(i) }>Delete</button></li>
                             )
                        // }
                     })
